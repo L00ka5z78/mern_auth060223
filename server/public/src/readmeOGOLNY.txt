@@ -1,0 +1,1 @@
+ "start-mongo": "cd /d D:/MongoDb/bin/ && mongod.exe",
