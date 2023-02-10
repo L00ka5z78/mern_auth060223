@@ -6,9 +6,7 @@ const cookieParser = require("cookie-parser");
 
 const app = express();
 
-
-
-mongoose
+mongoose                                            // mongodb connection 
     .connect("mongodb://localhost:27017/jwt", {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -28,7 +26,6 @@ app.use(
     })
 );
 app.use(cookieParser());
-
 app.use(express.json());
 app.use("/", authRoutes);
 

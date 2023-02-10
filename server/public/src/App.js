@@ -1,10 +1,8 @@
-
-
 import React from "react";
-import Register from "./pages/Register";
+import { Register } from "./pages/Register";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Login from "./pages/Login";
-import Cards from "./pages/Card";
+import { Login } from "./pages/Login";
+import { Cards } from "./pages/Card";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {

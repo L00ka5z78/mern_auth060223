@@ -3,7 +3,8 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import { useCookies } from 'react-cookie';
 import { Link, useNavigate } from 'react-router-dom';
-function Register() {
+
+export const Register = () => {
   const [cookies] = useCookies(['cookie-name']);
   const navigate = useNavigate();
   useEffect(() => {
@@ -13,12 +14,17 @@ function Register() {
   }, [cookies, navigate]);
 
   const [values, setValues] = useState({ email: '', password: '' });
+
+                      // function which generates error messages in rect toastify
   const generateError = (error) =>
     toast.error(error, {
       position: 'bottom-right',
     });
+
   const handleSubmit = async (event) => {
     event.preventDefault();
+                    //axios getting data from BE
+
     try {
       const { data } = await axios.post(
         'http://localhost:4000/register',
@@ -27,6 +33,7 @@ function Register() {
         },
         { withCredentials: true }
       );
+                    // if data has error generate error messages
       if (data) {
         if (data.errors) {
           const { email, password } = data.errors;
@@ -74,6 +81,4 @@ function Register() {
       <ToastContainer />
     </div>
   );
-}
-
-export default Register;
+};
