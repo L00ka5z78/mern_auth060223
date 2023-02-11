@@ -47,3 +47,13 @@ KNOWN ISSUES. During login process react toastify renders notification twice. Re
 
 08.02.23 code in js
 Further upgrades: - rewrite to typescript:
+
+Example screens
+
+
+
+![Zrzut ekranu (6)](https://user-images.githubusercontent.com/110019733/218253976-92e57648-3fee-45d8-af4d-4a9699bf602c.png)
+![Zrzut ekranu (7)](https://user-images.githubusercontent.com/110019733/218253977-f3d38eb2-ce7e-4852-9c09-c74c23512a57.png)
+![Zrzut ekranu (8)](https://user-images.githubusercontent.com/110019733/218253978-f12f005b-d612-4343-868c-ad3e6514f608.png)
+![Zrzut ekranu (12)](https://user-images.githubusercontent.com/110019733/218253980-03c54eb1-78d8-4e9b-af62-473e0ceffe8b.png)
+![Zrzut ekranu (5)](https://user-images.githubusercontent.com/110019733/218253981-24bc88db-6562-46f2-bb9b-80003c85ef49.png)
